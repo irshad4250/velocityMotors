@@ -1,0 +1,510 @@
+:root {
+  --primary-color: #0d2149;
+  --secondary-color: #208aae;
+  --background-color: #f0f0f0;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  height: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.velocityMotorsBack {
+  background-image: url("https://img.freepik.com/free-vector/lightened-luxury-sedan-car-against-night-city-with-headlamps-rear-tail-lights-lit_1284-28804.jpg?semt=ais_incoming&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.fontContainer {
+  font-size: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.carVideo {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+}
+
+.VideoCon {
+  width: 100%;
+  height: calc(100vh - 60px);
+  object-fit: cover;
+}
+
+.videoTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ourProductsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 1rem;
+  min-height: calc(100vh - 60px);
+  background-color: var(--background-color);
+  color: white;
+}
+
+.ourProductsTitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+.ourProducts {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.5rem;
+}
+
+.productCard {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  flex-wrap: nowrap;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productImageContainer {
+  width: 100%;
+  height: 70%;
+  background-color: #0d2149;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.productImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productCard p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.priceAndButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buyNowButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.buyNowButton:hover {
+  background-color: var(--secondary-color);
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color) 0%,
+    var(--secondary-color) 200%
+  );
+  color: white;
+}
+
+.servicesTitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.services {
+  width: 100%;
+  min-height: 390px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.serviceCard {
+  width: 400px;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.serviceCard p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.servicesDescription {
+  width: 70%;
+  height: 20%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: calc(100vh - 60px);
+  background-color: var(--background-color);
+}
+
+.contactTitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+
+.contactDescription {
+  width: 70%;
+  height: 20%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contactDetails {
+  width: 70%;
+  height: 20%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contactForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+.contactForm textarea {
+  height: 100px;
+}
+
+.contactForm button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactForm button:hover {
+  background-color: var(--secondary-color);
+}
+
+.cartContainer {
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  width: 500px;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  height: 100vh;
+  z-index: 110;
+  color: white;
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
+  border-left: solid 1px white;
+  transition: all 0.5s ease-in-out;
+}
+
+.cartTitle {
+  font-size: 1.7rem;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.closeButton:hover {
+  opacity: 0.5;
+}
+
+.closeCartImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartSeperator {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.cartItems {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+}
+.cartItem {
+  width: 100%;
+  height: 130px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.cartItemImageCont {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cartItemImageCont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartItemDetails {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.cartItemRemovalSection {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.cartItemRemovalSection button {
+  color: white;
+  border: none;
+  width: 20px;
+  height: fit-content;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cartItemRemovalSection button:hover {
+  opacity: 0.5;
+}
+
+.cartItemRemovalSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartItemRemovalSection input,
+.cartItemDetails input {
+  width: 50px;
+  height: 30px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cartItemRemovalSection input:focus,
+.cartItemDetails input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.cartItemQuantitySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cartButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartButtons button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border: solid 1px var(--background-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cartButtons button:hover {
+  opacity: 0.7;
+}
+
+.cartTotal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}

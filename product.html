@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Car</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">VELOCITY MOTORS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="parentCont">
+      <div class="leftSide">
+        <div class="leftSideImageContainer">
+          <img
+            class="productImage"
+            src="https://img.freepik.com/premium-photo/sleek-luxury-sedan-with-hightech-features-design_1355275-1147.jpg"
+            alt="Car Image"
+          />
+        </div>
+      </div>
+      <div class="rightSide">
+        <h1 class="productTitle">Car Name</h1>
+        <p class="productDescription">
+          This is a detailed description of the car. It includes information
+          about the car's features, specifications, and any other relevant
+          details that potential buyers might find useful.
+        </p>
+        <p class="productPrice">$XX,XXX</p>
+        <button class="buyNowButton">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="cartContainer" id="cartContainer">
+      <div class="cartTitle">
+        Your Cart
+        <div class="closeButton" id="closeCartButton">
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/remove-close-round-white-icon.png"
+            alt="Close Cart"
+            class="closeCartImage"
+          />
+        </div>
+      </div>
+      <div class="cartSeperator"></div>
+
+      <div class="cartItems" id="cartItems"></div>
+
+      <div class="cartTotal">
+        <p>Total: Rs <span id="cartTotalAmount">0.00</span></p>
+      </div>
+
+      <div class="cartButtons">
+        <button class="checkoutButton">Checkout</button>
+        <button class="clearCartButton">Clear Cart</button>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="productPage.js"></script>
+  </body>
+</html>

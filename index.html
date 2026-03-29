@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">VELOCITY MOTORS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="velocityMotorsBack">
+      <div class="fontContainer">VELOCITY MOTORS</div>
+    </div>
+
+    <div class="carVideo">
+      <video autoplay muted loop class="VideoCon">
+        <source src="carVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="videoTitle">
+        <p>Limited Time Steal</p>
+      </div>
+    </div>
+
+    <div class="ourProductsContainer">
+      <div class="ourProductsTitle">OUR CARS</div>
+      <div class="ourProducts"></div>
+    </div>
+
+    <div class="servicesContainer">
+      <div class="servicesTitle">OUR SERVICES</div>
+      <p class="servicesDescription">
+        We offer a comprehensive range of automotive services designed to meet
+        all your needs. From expert maintenance and repairs to flexible
+        financing options and immersive test drives, our dedicated team ensures
+        your complete satisfaction and peace of mind.
+      </p>
+      <div class="services">
+        <div class="serviceCard">
+          <h3>Maintenance</h3>
+          <p>
+            Keep your car in top shape with our expert maintenance services. Our
+            certified technicians provide comprehensive inspections, oil
+            changes, tire rotations, and advanced diagnostics to ensure your
+            vehicle runs smoothly and safely for years to come.
+          </p>
+        </div>
+        <div class="serviceCard">
+          <h3>Financing</h3>
+          <p>
+            Flexible financing options to make your dream car a reality. Our
+            financial experts work with multiple lenders to secure the best
+            terms, making premium vehicles accessible and affordable for every
+            customer.
+          </p>
+        </div>
+        <div class="serviceCard">
+          <h3>Test Drive</h3>
+          <p>
+            Experience the thrill of driving before you buy with our
+            comprehensive test drive service. Our knowledgeable staff will guide
+            you through every feature, ensuring you feel confident in your
+            choice and get the perfect vehicle for your lifestyle and needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactContainer">
+      <div class="contactTitle">CONTACT US</div>
+      <p class="contactDescription">
+        Have questions or need assistance? Our dedicated customer support team
+        is here to help. Contact us via phone, email, or visit our showroom for
+        personalized service and expert advice on all your automotive needs.
+      </p>
+      <div class="contactDetails">
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@velocitymotors.com</p>
+      </div>
+
+      <form class="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="cartContainer" id="cartContainer">
+      <div class="cartTitle">
+        Your Cart
+        <div class="closeButton" id="closeCartButton">
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/remove-close-round-white-icon.png"
+            alt="Close Cart"
+            class="closeCartImage"
+          />
+        </div>
+      </div>
+      <div class="cartSeperator"></div>
+
+      <div class="cartItems" id="cartItems"></div>
+
+      <div class="cartTotal">
+        <p>Total: Rs <span id="cartTotalAmount">0.00</span></p>
+      </div>
+
+      <div class="cartButtons">
+        <button class="checkoutButton">Checkout</button>
+        <button class="clearCartButton">Clear Cart</button>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
