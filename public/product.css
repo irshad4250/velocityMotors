@@ -1,11 +1,11 @@
 .parentCont {
   min-height: calc(100vh - 60px);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  padding: 0px 100px;
+  padding: 10px 40px;
   background: linear-gradient(
     to bottom,
     var(--primary-color) 0%,
@@ -13,21 +13,28 @@
   );
   color: white;
   animation: backgroundAnimation 5s ease-in-out infinite;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .parentCont {
+    flex-wrap: wrap;
+  }
 }
 
 .leftSide {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 500px;
   width: 500px;
+  max-height: 500px;
   justify-content: center;
   align-items: center;
 }
 
 .leftSideImageContainer {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +59,7 @@
 .rightSide h1 {
   font-size: 2.5rem;
   color: white;
+  text-align: center;
 }
 
 .buyNowButton {
