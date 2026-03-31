@@ -14,7 +14,7 @@
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .logo {
@@ -33,6 +33,7 @@ nav {
   background-color: var(--primary-color);
   padding: 1rem;
   height: 60px;
+  width: 100vw;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
